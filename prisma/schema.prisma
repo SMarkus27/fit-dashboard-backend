@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+datasource db {
+  provider = "postgresql" // ou "sqlite", "mysql"
+}
+
+model Exercise {
+  id                String   @id @default(uuid())
+  name              String
+  targetMuscleGroup String
+  description       String?
+  createdAt         DateTime @default(now())
+}
