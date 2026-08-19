@@ -83,3 +83,4 @@ temp/
 
 # Prisma generated output
 /generated/prisma
+src/generated/
